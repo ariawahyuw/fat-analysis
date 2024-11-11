@@ -19,7 +19,7 @@ Glossary:
 def main():
     import pandas as pd
     import numpy as np
-    from fat_analysis.fatty_acid.load_spectra_data import load_config
+    from fat_analysis.load_spectra_data import load_config
     from sklearn.decomposition import PCA
     from sklearn.model_selection import train_test_split, GridSearchCV
     from sklearn.neighbors import KNeighborsRegressor

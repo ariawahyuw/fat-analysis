@@ -4,8 +4,8 @@
 .vscode/*
 .conda/*
 example/__pycache__/
-fatty_acid/__pycache__/
-helper/__pycache__/
+fat_analysis/__pycache__/
+fat_analysis/helper/__pycache__/
 notebooks/
 artificial/
 env/
