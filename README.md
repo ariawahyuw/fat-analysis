@@ -9,7 +9,7 @@ This repository contains the modules and scripts used to determine the concentra
 To install the modules, run the following command:
 
 ```bash
-pip install git+hhttps://github.com/ariawahyuw/fat-analysis.git
+pip install git+https://github.com/ariawahyuw/fat-analysis.git
 ```
 
 ## Usage

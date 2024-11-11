@@ -23,7 +23,7 @@ def main():
     import numpy as np
     import matplotlib.pyplot as plt
     import matplotlib.colors as mcolors
-    from fatty_acid.load_spectra_data import load_config
+    from fat_analysis.fatty_acid.load_spectra_data import load_config
     from helper.plot_3d import make_meshgrid, plot_contours
     from scipy.interpolate import griddata
     from sklearn.decomposition import PCA

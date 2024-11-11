@@ -9,7 +9,7 @@ def main():
     from sklearn.decomposition import PCA
     from sklearn.cluster import KMeans
 
-    from fatty_acid.load_spectra_data import load_config, load_data, fill_concentration_to_data
+    from fat_analysis.fatty_acid.load_spectra_data import load_config, load_data, fill_concentration_to_data
     from example.load_preprocessed_data import clean
 
     config = load_config('file.yaml')

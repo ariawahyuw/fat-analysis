@@ -4,7 +4,7 @@ import pandas as pd
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from simulasi_data_lemak.fatty_acid.load_spectra_data import load_config, load_data, fill_concentration_to_data
+from fat_analysis.fatty_acid.load_spectra_data import load_config, load_data, fill_concentration_to_data
 
 """
 Glossary:
