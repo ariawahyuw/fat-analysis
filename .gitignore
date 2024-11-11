@@ -1,0 +1,11 @@
+# data/Data\ Artifisial/*
+# data/Data\ Lemak/*
+# data/Data\ Referensi/*
+.vscode/*
+.conda/*
+example/__pycache__/
+fatty_acid/__pycache__/
+helper/__pycache__/
+notebooks/
+artificial/
+env/

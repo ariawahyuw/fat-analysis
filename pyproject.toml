@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fat_analysis"
+version = "0.1.0"
+description = "A project for simulating fat data"
+authors = [
+    { name="Aria Wahyu", email="ariawahyu8@gmail.com" }
+]
+
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    'BaselineRemoval>=0.1.6',
+    'ipykernel>=6.29.5',
+    'matplotlib>=3.7.5',
+    'numpy>=1.24.4',
+    'pandas>=2.0.3',
+    'PyYAML>=6.0.2',
+    'scikit-learn>=1.3.2',
+    'scipy>=1.10.1'
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8"
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+
+exclude = ["docs*", "example*"]

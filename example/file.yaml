@@ -1,0 +1,94 @@
+data:
+  pure:
+    types:
+      - chicken
+      - cow
+      - duck
+      - goat
+      - pig_b
+      - pig_p
+      - pig_rj
+      - pig_s
+    chicken:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/chicken/chicken_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/chicken/chicken_mean.csv'
+    cow:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/cow/cow_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/cow/cow_mean.csv'
+    duck:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/duck/duck_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/duck/duck_mean.csv'
+    goat:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/goat/goat_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/goat/goat_mean.csv'
+    pig_b:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_b_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_b_mean.csv'
+    pig_p:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_p_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_p_mean.csv'
+    pig_rj:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_rj_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_rj_mean.csv'
+    pig_s:
+      all_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_s_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/pure fat/pig/pig_s_mean.csv'
+
+  mixed:
+    types:
+      - chicken
+      - cow
+      - duck
+      - goat
+      - pig_b
+    pig_b,chicken,25,75:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 25-75/pig_chicken_25_75_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 25-75/pig_chicken_25_75_mean.csv'
+    pig_b,chicken,50,50:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 50-50/pig_chicken_50_50_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 50-50/pig_chicken_50_50_mean.csv'
+    pig_b,chicken,75,25:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 75-25/pig_chicken_75_25_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-chicken/pig-chicken 75-25/pig_chicken_75_25_mean.csv'
+    pig_b,cow,25,75:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 25-75/pig_cow_25_75_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 25-75/pig_cow_25_75_mean.csv'
+    pig_b,cow,50,50:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 50-50/pig_cow_50_50_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 50-50/pig_cow_50_50_mean.csv'
+    pig_b,cow,75,25:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 75-25/pig_cow_75_25_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-cow/pig-cow 75-25/pig_cow_75_25_mean.csv'
+    pig_b,duck,25,75:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 25-75/pig_duck_25_75_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 25-75/pig_duck_25_75_mean.csv'
+    pig_b,duck,50,50:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 50-50/pig_duck_50_50_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 50-50/pig_duck_50_50_mean.csv'
+    pig_b,duck,75,25:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 75-25/pig_duck_75_25_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-duck/pig-duck 75-25/pig_duck_75_25_mean.csv'
+    pig_b,goat,25,75:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 25-75/pig_goat_25_75_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 25-75/pig_goat_25_75_mean.csv'
+    pig_b,goat,50,50:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 50-50/pig_goat_50_50_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 50-50/pig_goat_50_50_mean.csv'
+    pig_b,goat,75,25:
+      all_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 75-25/pig_goat_75_25_all.csv'
+      mean_spectrum: '../data/Data Lemak/preprocessed/contamination/pig-goat/pig-goat 75-25/pig_goat_75_25_mean.csv'
+
+mask_to_remove:
+  pure:
+    chicken: []
+    cow: [4, 5, 6, 19, 20, 21]
+    duck: [5, 6, 21, 36, 44]
+    goat: [4, 5, 19, 20]
+    pig_b: [4, 5, 6, 20, 21, 33, 35, 36]
+    pig_p: [5, 6, 20, 21, 35, 36]
+    pig_rj: [2, 3, 4, 5, 14, 18, 19, 20]
+    pig_s: [1]
+  mixed:
+    pig_b,cow,75,25: [41, 42, 46]
+    pig_b,duck,75,25: [19, 22, 25, 26]
+    pig_b,goat,50,50: [40, 47]
