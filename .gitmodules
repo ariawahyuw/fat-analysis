@@ -1,0 +1,6 @@
+[submodule "data"]
+	path = data
+	url = git@github.com:ariawahyuw/private.fat-analysis.data.git
+[submodule "notebooks"]
+	path = notebooks
+	url = git@github.com:ariawahyuw/private.fat-analysis.notebooks.git
